@@ -1,0 +1,10 @@
+version: 2.1
+
+
+  build:
+    docker:
+      - image: circleci/php:cli
+      
+    steps:
+      - checkout
+      - run:  echo '<?php print "CT success."; ?>' | php
